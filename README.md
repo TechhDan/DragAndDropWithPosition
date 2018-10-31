@@ -1,3 +1,3 @@
 # DragAndDropWithPosition
 
-Very light Drag and drop list with no jQuery. It also saves the position onto MySQL database with ajax.
+Very light drag and drop list with no jQuery. On change the list saves the position onto MySQL database via ajax.
