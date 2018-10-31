@@ -28,3 +28,14 @@ ul {
     border: 2px solid blue;
     background-color: lightskyblue;
 }
+.success {
+    animation: backgroundChange 1s;
+}
+
+@keyframes backgroundChange {
+    0% { background-color: white; }
+    25% { background-color: whitesmoke; }
+    50% { background-color: lightgreen; }
+    75% { background-color: whitesmoke; }
+    100% { background-color: white; }
+}

@@ -73,10 +73,18 @@ function postAjaxUpdate(payload) {
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
-            console.log(xhr.responseText);
+            highLight(source);
+            console.log(xhr.responseText, source);
         }
     };
     xhr.send(data);
+}
+
+function highLight(element) {
+    element.classList.add('success');
+    setTimeout(() => {
+        element.classList.remove('success');
+    }, 2000);
 }
 
 function orderPositions() {
