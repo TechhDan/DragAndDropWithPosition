@@ -1,0 +1,30 @@
+[draggable] {
+    user-select: none;
+}
+html, body {
+    height: 100%;
+    margin: 0px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li {
+    border: 2px solid #000;
+    list-style-type: none;
+    margin: 2px;
+    padding: 5px;
+}
+ul {
+    margin: auto;
+    text-align: center;
+    width: 25%;
+}
+.moving {
+    background-color: lightgrey;
+}
+.over {
+    border: 2px solid blue;
+    background-color: lightskyblue;
+}
