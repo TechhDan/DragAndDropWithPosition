@@ -2,7 +2,7 @@
 DROP TABLE IF EXISTS `todo`;
 CREATE TABLE IF NOT EXISTS `todo` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `position` int(11) NOT NULL,
+  `position` int(11) DEFAULT 0,
   `name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=6;

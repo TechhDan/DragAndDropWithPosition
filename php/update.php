@@ -6,7 +6,6 @@ $payload = json_decode(stripslashes(file_get_contents("php://input")));
 require_once 'init.php';
 $db = new DB($conn);
 
-die('false');
 if ($db->updateTask($payload)) {
     die('true');
 } else {
