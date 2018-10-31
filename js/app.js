@@ -73,16 +73,19 @@ function postAjaxUpdate(payload) {
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
-            highLight(source);
+            highLight(xhr.responseText, source);
         }
     };
     xhr.send(data);
 }
 
-function highLight(element) {
-    element.classList.add('success');
+function highLight(response, element) {
+    let status = response === 'true' ? 'success' : 'error';
+
+
+    element.classList.add(status);
     setTimeout(() => {
-        element.classList.remove('success');
+        element.classList.remove(status);
     }, 2000);
 }
 

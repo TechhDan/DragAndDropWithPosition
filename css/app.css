@@ -31,11 +31,22 @@ ul {
 .success {
     animation: backgroundChange 1s;
 }
+.error {
+    animation: backgroundChangeError 1s;
+}
 
 @keyframes backgroundChange {
     0% { background-color: white; }
     25% { background-color: whitesmoke; }
     50% { background-color: lightgreen; }
+    75% { background-color: whitesmoke; }
+    100% { background-color: white; }
+}
+
+@keyframes backgroundChangeError {
+    0% { background-color: white; }
+    25% { background-color: whitesmoke; }
+    50% { background-color: #ff9b9b; }
     75% { background-color: whitesmoke; }
     100% { background-color: white; }
 }
