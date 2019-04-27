@@ -1,5 +1,4 @@
-# DragAndDropWithPosition
+# E6 drag and drop
 
-Very light drag and drop list with no jQuery.<br>
-On change the list saves the position onto MySQL database via ajax.
+Drag and drop elements while saving their new positions in a database
 
